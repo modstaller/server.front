@@ -3,8 +3,6 @@ import React from 'react'
 
 import { Mods } from './../index'
 
-import './core.page.css'
-
 function Core () {
   return (
     <div className='Core'>
