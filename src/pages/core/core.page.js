@@ -1,10 +1,19 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import React from 'react'
+
+import { Mods } from './../index'
 
 import './core.page.css'
 
 function Core () {
   return (
-    <div>Hello, World!</div>
+    <div className='Core'>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Mods}/>
+        </Switch>
+      </Router>
+    </div>
   )
 }
 
